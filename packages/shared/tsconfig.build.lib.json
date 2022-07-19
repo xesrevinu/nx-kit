@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc/shared",
+    "allowJs": true,
+    "rootDir": "build"
+  },
+  "include": ["build/**/*.js"]
+}

@@ -1,0 +1,16 @@
+{
+  "importMap": {
+    "^(.*)/packages/([^/]*)/src(.*)/index\\.(ts|tsx)$": "@org/$2$3",
+    "^(.*)/packages/([^/]*)/src(.*)\\.(ts|tsx)$": "@org/$2$3",
+    "^(.*)/packages/([^/]*)/test/(.*)\\.(ts|tsx)$": "@org/$2/test/$3",
+
+    "^(.*)/apps/([^/]*)/src(.*)/index\\.(ts|tsx)$": "@org/$2$3",
+    "^(.*)/apps/([^/]*)/src(.*)\\.(ts|tsx)$": "@org/$2$3",
+    "^(.*)/apps/([^/]*)/test/(.*)\\.(ts|tsx)$": "@org/$2/test/$3"
+  },
+  "traceMap": {
+    "^(.*)/packages/([^/]*)/(.*)$": "(@org/$2) $3",
+
+    "^(.*)/apps/([^/]*)/(.*)$": "(@org/$2) $3"
+  }
+}

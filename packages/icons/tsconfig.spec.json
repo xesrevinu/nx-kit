@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build/test",
+    "declarationDir": "build/test",
+    "tsBuildInfoFile": "build/tsbuildinfo/test.tsbuildinfo",
+    "tsPlusEnabled": false,
+    "rootDir": "test",
+    "types": ["node"]
+  },
+  "include": [
+    "../vitest.config.ts",
+    "test/**/*.test.ts",
+    "test/**/*.spec.ts",
+    "test/**/*.test.tsx",
+    "test/**/*.spec.tsx"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
+}

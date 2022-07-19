@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "tsBuildInfoFile": "build/tsbuildinfo/tsconfig.tsbuildinfo"
+  },
+  "references": [
+    {
+      "path": "packages/types/tsconfig.json"
+    },
+    {
+      "path": "packages/shared/tsconfig.json"
+    },
+    {
+      "path": "packages/icons/tsconfig.json"
+    },
+    {
+      "path": "packages/ui/tsconfig.json"
+    },
+    {
+      "path": "apps/web/tsconfig.json"
+    },
+    {
+      "path": "apps/bun-app/tsconfig.json"
+    },
+    {
+      "path": "apps/vite/tsconfig.json"
+    },
+    {
+      "path": "apps/vite-electron/tsconfig.json"
+    }
+  ]
+}

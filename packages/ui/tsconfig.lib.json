@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "declarationDir": "build",
+    "tsBuildInfoFile": "build/tsbuildinfo/esm.tsbuildinfo",
+    "tsPlusEnabled": false,
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+}

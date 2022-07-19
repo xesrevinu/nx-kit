@@ -1,0 +1,41 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build/test",
+    "tsBuildInfoFile": "build/tsbuildinfo/test.tsbuildinfo",
+    "declarationDir": "build/test",
+    "baseUrl": ".",
+    "rootDir": "test",
+    "jsx": "react-jsx",
+    "paths": {
+      "@org/shared": ["../../packages/shared/build/index"],
+      "@org/shared/*": ["../../packages/shared/build/*"],
+
+      "@org/types": ["../../packages/types/build/index"],
+      "@org/types/*": ["../../packages/types/build/*"],
+
+      "@org/icons": ["../../packages/icons/src/index"],
+      "@org/icons/*": ["../../packages/icons/src/*"],
+
+      "@org/ui": ["../../packages/ui/build/index"],
+      "@org/ui/*": ["../../packages/ui/build/*"],
+
+      "@/components/*": ["components/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/providers/*": ["providers/*"],
+      "@/styles/*": ["styles/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ],
+  "include": [
+    "../vitest.config.ts",
+    "test/**/*.test.ts",
+    "test/**/*.spec.ts",
+    "test/**/*.test.tsx",
+    "test/**/*.spec.tsx"
+  ]
+}

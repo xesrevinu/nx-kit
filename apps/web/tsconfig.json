@@ -1,0 +1,33 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "build/tsbuildinfo/tsconfig.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@org/shared": ["../../packages/shared/build/index"],
+      "@org/shared/*": ["../../packages/shared/build/*"],
+
+      "@org/types": ["../../packages/types/build/index"],
+      "@org/types/*": ["../../packages/types/build/*"],
+
+      "@org/icons": ["../../packages/icons/src/index"],
+      "@org/icons/*": ["../../packages/icons/src/*"],
+
+      "@org/ui": ["../../packages/ui/build/index"],
+      "@org/ui/*": ["../../packages/ui/build/*"],
+
+      "@/components/*": ["components/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/providers/*": ["providers/*"],
+      "@/styles/*": ["styles/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}

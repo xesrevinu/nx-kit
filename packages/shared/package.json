@@ -1,0 +1,9 @@
+{
+  "name": "@org/shared",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "build/index.js",
+  "tsplus": {
+    "typeDir": "./build"
+  }
+}

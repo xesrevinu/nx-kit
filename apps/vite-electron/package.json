@@ -1,0 +1,11 @@
+{
+  "name": "vite-electron",
+  "productName": "Func1",
+  "version": "0.0.1",
+  "author": "test@gmail.com",
+  "description": "Vite React Electron boilerplate.",
+  "main": "dist/electron/main/index.js",
+  "devDependencies": {
+    "electron": "^19.0.7"
+  }
+}

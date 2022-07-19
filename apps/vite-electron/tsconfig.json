@@ -1,0 +1,48 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "tsBuildInfoFile": "build/tsbuildinfo/esm.tsbuildinfo",
+    "declarationDir": "build",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@org/shared": ["../../packages/shared/build/index"],
+      "@org/shared/*": ["../../packages/shared/build/*"],
+
+      "@org/types": ["../../packages/types/build/index"],
+      "@org/types/*": ["../../packages/types/build/*"],
+
+      "@org/icons": ["../../packages/icons/src/index"],
+      "@org/icons/*": ["../../packages/icons/src/*"],
+
+      "@org/ui": ["../../packages/ui/build/index"],
+      "@org/ui/*": ["../../packages/ui/build/*"],
+
+      "@/components/*": ["src/components/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/providers/*": ["src/providers/*"],
+      "@/styles/*": ["src/styles/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "../../packages/types/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/shared/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/icons/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/ui/tsconfig.lib.json"
+    }
+    // {
+    //   "path": "./tsconfig.node.json"
+    // }
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
